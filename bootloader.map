@@ -23,7 +23,7 @@ Command:
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../lib/dsPIC33F \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33F/gld \
   -Map=C:\Dropbox\EMIC\TARGETS\mariano__hunkeler.com.ar\boot_build\BOOT\bootloader.map \
-  C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o \
+  C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o \
   -Tp24FJ64GA002_boot.gld.00 \
   -start-group \
   --library=c99-pic30-elf \
@@ -40,7 +40,7 @@ c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_
 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
                               (__crt_start_mode_normal)
 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                              C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o (___delay32)
+                              C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o (___delay32)
 
 
 xc16-ld 2.10 (A)
@@ -49,18 +49,18 @@ Default Code Model: Small
 Default Data Model: Large
 Default Scalar Model: Small
 
-"program" Memory  [Origin = 0x8400, Length = 0x27fc]
+"program" Memory  [Origin = 0xa000, Length = 0xbfc]
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-_0000000004ACE000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
-.text                       0x8408                0xce           0x135  (309)
-.const                      0x84d6                0x12            0x1b  (27)
-.text                       0x84e8               0x56c           0x822  (2082)
-.init.delay32               0x8a54                0x1c            0x2a  (42)
-.dinit                      0x8a70                 0xe            0x15  (21)
+_0000000004956000_at_address_000000000000A000    0xa000                 0x8             0xc  (12)
+.text                       0xa008                0xce           0x135  (309)
+.const                      0xa0d6                0x12            0x1b  (27)
+.text                       0xa0e8               0x56c           0x822  (2082)
+.init.delay32               0xa654                0x1c            0x2a  (42)
+.dinit                      0xa670                 0xe            0x15  (21)
 
-                 Total "program" memory used (bytes):          0x9bd  (2493) 16%
+                 Total "program" memory used (bytes):          0x9bd  (2493) 54%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -127,25 +127,25 @@ External Symbols in Data Memory (by name):
 
 External Symbols in Program Memory (by address):
 
-                  0x008400                  _g_moduleId
-                  0x008408                  __resetPRI
-                  0x008444                  __psv_init
-                  0x00845a                  __data_init_standard
-                  0x00845a                  __data_init
-                  0x0084d0                  __DefaultInterrupt
-                  0x008680                  _main
-                  0x008a54                  ___delay32
+                  0x00a000                  _g_moduleId
+                  0x00a008                  __resetPRI
+                  0x00a044                  __psv_init
+                  0x00a05a                  __data_init_standard
+                  0x00a05a                  __data_init
+                  0x00a0d0                  __DefaultInterrupt
+                  0x00a280                  _main
+                  0x00a654                  ___delay32
 
 External Symbols in Program Memory (by name):
 
-                  0x0084d0                  __DefaultInterrupt
-                  0x008a54                  ___delay32
-                  0x00845a                  __data_init
-                  0x00845a                  __data_init_standard
-                  0x008444                  __psv_init
-                  0x008408                  __resetPRI
-                  0x008400                  _g_moduleId
-                  0x008680                  _main
+                  0x00a0d0                  __DefaultInterrupt
+                  0x00a654                  ___delay32
+                  0x00a05a                  __data_init
+                  0x00a05a                  __data_init_standard
+                  0x00a044                  __psv_init
+                  0x00a008                  __resetPRI
+                  0x00a000                  _g_moduleId
+                  0x00a280                  _main
 
 Memory Configuration
 
@@ -155,54 +155,54 @@ reset            0x000000           0x000004
 ivt              0x000004           0x0000fc  
 _reserved        0x000100           0x000004  
 aivt             0x000104           0x0000fc  
-program          0x008400           0x0027fc           xr
+program          0x00a000           0x000bfc           xr
 CONFIG2          0x00abfc           0x000002  
 CONFIG1          0x00abfe           0x000002  
 *default*        0x000000           0xffffffff  
 
 Linker script and memory map
 
-LOAD C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+LOAD C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
                     0xabfe                  __CONFIG1 = 0xabfe
                     0x0001                  __NO_HANDLES = 0x1
-                    0x8400                  __CODE_BASE = 0x8400
-                    0x27fc                  __CODE_LENGTH = 0x27fc
+                    0xa000                  __CODE_BASE = 0xa000
+                    0x0bfc                  __CODE_LENGTH = 0xbfc
                     0x0004                  __IVT_BASE = 0x4
                     0x0104                  __AIVT_BASE = 0x104
                     0x0800                  __DATA_BASE = 0x800
                     0x2000                  __DATA_LENGTH = 0x2000
 
 .reset            0x000000          0x4
-                  0x000000          0x2 SHORT 0x8408 ABSOLUTE (__reset)
+                  0x000000          0x2 SHORT 0xa008 ABSOLUTE (__reset)
                   0x000001          0x2 SHORT 0x4
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x008408         0xce
+.text             0x00a008         0xce
  *(.init)
- .init            0x008408         0x4c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
-                  0x008408                  __resetPRI
-                  0x008408                  __reset
-                  0x008444                  __psv_init
- .init            0x008454         0x7c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
-                  0x00845a                  __data_init_standard
-                  0x00845a                  __data_init
+ .init            0x00a008         0x4c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
+                  0x00a008                  __resetPRI
+                  0x00a008                  __reset
+                  0x00a044                  __psv_init
+ .init            0x00a054         0x7c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
+                  0x00a05a                  __data_init_standard
+                  0x00a05a                  __data_init
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr             0x0084d0          0x4 default_isr
-                  0x0084d0                  __DefaultInterrupt
+ .isr             0x00a0d0          0x4 default_isr
+                  0x00a0d0                  __DefaultInterrupt
  *(.libc)
  *(.libm)
  *(.libdsp)
  *(.lib*)
  .libpic30_crt_start_mode
-                  0x0084d4          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
-                  0x0084d4                  __crt_start_mode
-                  0x0084d4                  __crt_start_mode_normal
+                  0x00a0d4          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
+                  0x00a0d4                  __crt_start_mode
+                  0x00a0d4                  __crt_start_mode_normal
 
 usercode
  *(usercode)
@@ -218,24 +218,24 @@ __CONFIG1
 
 .debug_info       0x000000       0x131e
  *(.debug_info)
- .debug_info      0x000000       0x131e C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .debug_info      0x000000       0x131e C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x1eb
  *(.debug_abbrev)
- .debug_abbrev    0x000000        0x1eb C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .debug_abbrev    0x000000        0x1eb C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .debug_line       0x000000        0x219
  *(.debug_line)
- .debug_line      0x000000        0x219 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .debug_line      0x000000        0x219 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .debug_frame      0x000000         0xc4
  *(.debug_frame)
- .debug_frame     0x000000         0xc4 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .debug_frame     0x000000         0xc4 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .debug_str        0x000000         0x78
  *(.debug_str)
- .debug_str       0x000000         0x78 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .debug_str       0x000000         0x78 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .debug_loc
  *(.debug_loc)
@@ -247,7 +247,7 @@ __CONFIG1
                   0x000000         0xf1
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0xf1 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+                  0x000000         0xf1 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -255,7 +255,7 @@ __CONFIG1
 .debug_aranges    0x000000         0x18
  *(.debug_aranges)
  .debug_aranges
-                  0x000000         0x18 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+                  0x000000         0x18 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -847,12 +847,12 @@ LOAD data_init
 .debug_pubtypes
                   0x000018        0x11d
  .debug_pubtypes
-                  0x000018        0x11d C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+                  0x000018        0x11d C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 __c30_signature
                   0x000135         0x18
  __c30_signature
-                  0x000135          0x6 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+                  0x000135          0x6 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
  __c30_signature
                   0x00013b          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
  __c30_signature
@@ -861,7 +861,7 @@ __c30_signature
                   0x000147          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
 
 .nbss               0x0800         0x1c
- .nbss              0x0800         0x1c C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .nbss              0x0800         0x1c C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
                     0x0800                  _primerByte
                     0x0802                  _h_addr
                     0x0804                  _count
@@ -879,33 +879,33 @@ __c30_signature
                     0x0818                  _address_erase
 
 .bss                0x081c         0x60
- .bss               0x081c         0x60 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .bss               0x081c         0x60 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
                     0x081c                  _data
                     0x083c                  _buffer
 
-_0000000004ACE000_at_address_0000000000008400
-                  0x008400          0x8
- _0000000004ACE000_at_address_0000000000008400
-                  0x008400          0x8 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
-                  0x008400                  _g_moduleId
+_0000000004956000_at_address_000000000000A000
+                  0x00a000          0x8
+ _0000000004956000_at_address_000000000000A000
+                  0x00a000          0x8 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
+                  0x00a000                  _g_moduleId
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
-                  0x00abfe          0x2 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+                  0x00abfe          0x2 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
 .config_IESO      0x00abfc          0x2
- .config_IESO     0x00abfc          0x2 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+ .config_IESO     0x00abfc          0x2 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
-.const            0x0084d6         0x12 load address 0x0084d6  
- .const           0x0084d6         0x12 C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
+.const            0x00a0d6         0x12 load address 0x00a0d6  
+ .const           0x00a0d6         0x12 C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
 
-.text             0x0084e8        0x56c
- .text            0x0084e8        0x56c C:\Users\RFI1\AppData\Local\Temp\ccDQVREh.0000984c.o
-                  0x008680                  _main
+.text             0x00a0e8        0x56c
+ .text            0x00a0e8        0x56c C:\Users\RFI1\AppData\Local\Temp\cccn6yiv.0000a704.o
+                  0x00a280                  _main
 
-.init.delay32     0x008a54         0x1c
- .init.delay32    0x008a54         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x008a54                  ___delay32
+.init.delay32     0x00a654         0x1c
+ .init.delay32    0x00a654         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x00a654                  ___delay32
 
-.dinit            0x008a70          0xe
- .dinit           0x008a70          0xe data_init
+.dinit            0x00a670          0xe
+ .dinit           0x00a670          0xe data_init

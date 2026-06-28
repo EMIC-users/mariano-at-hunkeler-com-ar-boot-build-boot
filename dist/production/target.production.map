@@ -70,11 +70,11 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xce           0x135  (309)
-_0000000004918000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
-.const                      0x8408                0x12            0x1b  (27)
-.text                       0x841a               0x7dc           0xbca  (3018)
-.init.delay32               0x8bf6                0x1c            0x2a  (42)
-.dinit                      0x8c12                 0xe            0x15  (21)
+_0000000004A28000_at_address_000000000000A000    0xa000                 0x8             0xc  (12)
+.const                      0xa008                0x12            0x1b  (27)
+.text                       0xa01a               0x7dc           0xbca  (3018)
+.init.delay32               0xa7f6                0x1c            0x2a  (42)
+.dinit                      0xa812                 0xe            0x15  (21)
 
                  Total "program" memory used (bytes):          0xd65  (3429) 5%
 
@@ -148,20 +148,20 @@ External Symbols in Program Memory (by address):
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x0002c8                  __DefaultInterrupt
-                  0x008400                  _g_moduleId
-                  0x00868e                  _main
-                  0x008bf6                  ___delay32
+                  0x00a000                  _g_moduleId
+                  0x00a28e                  _main
+                  0x00a7f6                  ___delay32
 
 External Symbols in Program Memory (by name):
 
                   0x0002c8                  __DefaultInterrupt
-                  0x008bf6                  ___delay32
+                  0x00a7f6                  ___delay32
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x008400                  _g_moduleId
-                  0x00868e                  _main
+                  0x00a000                  _g_moduleId
+                  0x00a28e                  _main
 
 Memory Configuration
 
@@ -886,11 +886,11 @@ __c30_signature
                     0x081e                  _data
                     0x083e                  _buffer
 
-_0000000004918000_at_address_0000000000008400
-                  0x008400          0x8
- _0000000004918000_at_address_0000000000008400
-                  0x008400          0x8 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
-                  0x008400                  _g_moduleId
+_0000000004A28000_at_address_000000000000A000
+                  0x00a000          0x8
+ _0000000004A28000_at_address_000000000000A000
+                  0x00a000          0x8 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
+                  0x00a000                  _g_moduleId
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
@@ -899,16 +899,16 @@ _0000000004918000_at_address_0000000000008400
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
 
-.const            0x008408         0x12 load address 0x008408  
- .const           0x008408         0x12 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
+.const            0x00a008         0x12 load address 0x00a008  
+ .const           0x00a008         0x12 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
 
-.text             0x00841a        0x7dc
- .text            0x00841a        0x7dc C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
-                  0x00868e                  _main
+.text             0x00a01a        0x7dc
+ .text            0x00a01a        0x7dc C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
+                  0x00a28e                  _main
 
-.init.delay32     0x008bf6         0x1c
- .init.delay32    0x008bf6         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x008bf6                  ___delay32
+.init.delay32     0x00a7f6         0x1c
+ .init.delay32    0x00a7f6         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x00a7f6                  ___delay32
 
-.dinit            0x008c12          0xe
- .dinit           0x008c12          0xe data_init
+.dinit            0x00a812          0xe
+ .dinit           0x00a812          0xe data_init

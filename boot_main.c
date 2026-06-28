@@ -360,11 +360,19 @@ int main(void)
                     case 'D':                    /* borrar la zona de app */
                         if (miEstado == 3)
                         {
+                            uint16_t rv0lo, rv2lo;
+                            uint8_t  rv0hi, rv2hi;
+                            flashReadWord(0, &rv0lo, &rv0hi);
+                            flashReadWord(2, &rv2lo, &rv2hi);
+
                             addressPrograma     = 0xFFFF;
                             addressProgramaTemp = 0xFFFF;
                             for (address_erase = 0; address_erase < ERASE_LIMIT_PC;
                                  address_erase += FLASH_PAGE_ERASE_PC)
                                 flashErasePage(address_erase);
+
+                            flashWriteWord(0, rv0lo, rv0hi);
+                            flashWriteWord(2, rv2lo, rv2hi);
                             sendOk = 1;
                         }
                         break;

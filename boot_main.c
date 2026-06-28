@@ -197,6 +197,8 @@ int main(void)
     unsigned char miEstado = 0;
     uint16_t wlo; uint8_t whi;
 
+    CLKDIVbits.RCDIV = 0;
+
     bootI2cInit();
 
     PIN_LED1_TRIS = 0;

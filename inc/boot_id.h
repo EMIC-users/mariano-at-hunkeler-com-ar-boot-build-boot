@@ -1,7 +1,7 @@
 #ifndef BOOT_ID_H
 #define BOOT_ID_H
 
-#define BOOT_MODULE_ID      { '2','W','Y','m','u','E' }
+#define BOOT_MODULE_ID      { 'S','l','i','3','O','G' }
 #define BOOT_MODULE_ID_LEN  6
 
 #endif /* BOOT_ID_H */

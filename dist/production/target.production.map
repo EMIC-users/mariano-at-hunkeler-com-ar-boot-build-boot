@@ -70,13 +70,13 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xce           0x135  (309)
-_00000000049D6000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
+_0000000004918000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
 .const                      0x8408                0x12            0x1b  (27)
-.text                       0x841a               0x7d4           0xbbe  (3006)
-.init.delay32               0x8bee                0x1c            0x2a  (42)
-.dinit                      0x8c0a                 0xe            0x15  (21)
+.text                       0x841a               0x7dc           0xbca  (3018)
+.init.delay32               0x8bf6                0x1c            0x2a  (42)
+.dinit                      0x8c12                 0xe            0x15  (21)
 
-                 Total "program" memory used (bytes):          0xd59  (3417) 5%
+                 Total "program" memory used (bytes):          0xd65  (3429) 5%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -150,12 +150,12 @@ External Symbols in Program Memory (by address):
                   0x0002c8                  __DefaultInterrupt
                   0x008400                  _g_moduleId
                   0x00868e                  _main
-                  0x008bee                  ___delay32
+                  0x008bf6                  ___delay32
 
 External Symbols in Program Memory (by name):
 
                   0x0002c8                  __DefaultInterrupt
-                  0x008bee                  ___delay32
+                  0x008bf6                  ___delay32
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
@@ -886,9 +886,9 @@ __c30_signature
                     0x081e                  _data
                     0x083e                  _buffer
 
-_00000000049D6000_at_address_0000000000008400
+_0000000004918000_at_address_0000000000008400
                   0x008400          0x8
- _00000000049D6000_at_address_0000000000008400
+ _0000000004918000_at_address_0000000000008400
                   0x008400          0x8 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
                   0x008400                  _g_moduleId
 
@@ -902,13 +902,13 @@ _00000000049D6000_at_address_0000000000008400
 .const            0x008408         0x12 load address 0x008408  
  .const           0x008408         0x12 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
 
-.text             0x00841a        0x7d4
- .text            0x00841a        0x7d4 C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
+.text             0x00841a        0x7dc
+ .text            0x00841a        0x7dc C:/Dropbox/EMIC/TARGETS/mariano__hunkeler.com.ar/boot_build/BOOT\build\default\production\boot_main.o
                   0x00868e                  _main
 
-.init.delay32     0x008bee         0x1c
- .init.delay32    0x008bee         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x008bee                  ___delay32
+.init.delay32     0x008bf6         0x1c
+ .init.delay32    0x008bf6         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x008bf6                  ___delay32
 
-.dinit            0x008c0a          0xe
- .dinit           0x008c0a          0xe data_init
+.dinit            0x008c12          0xe
+ .dinit           0x008c12          0xe data_init

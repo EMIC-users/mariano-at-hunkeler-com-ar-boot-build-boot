@@ -11,12 +11,12 @@
 /* Geometría de flash (PIC24FJ64GA002): erase page = 512 instr = 0x400 PC */
 #define FLASH_PAGE_ERASE_PC   0x0400UL
 
-#define BOOT_PTR_BASE              0x8000UL
-#define BOOT_CODE_BASE             0x8400UL
-#define LOADER_ADDR_PC             0x8000UL   /* límite de escritura HEX app  */
-#define ERASE_LIMIT_PC             0x8400UL   /* 'D': app + página de puntero */
-#define POINTER_USER_PROGRAM_ADDR  0x8000UL
-#define ID_MODULO_ADDR             0x8400UL
+#define BOOT_PTR_BASE              0x9C00UL
+#define BOOT_CODE_BASE             0xA000UL
+#define LOADER_ADDR_PC             0x9C00UL   /* límite de escritura HEX app  */
+#define ERASE_LIMIT_PC             0xA000UL   /* 'D': app + página de puntero */
+#define POINTER_USER_PROGRAM_ADDR  0x9C00UL
+#define ID_MODULO_ADDR             0xA000UL
 
 #define BOOT_DEFAULT_APP_ENTRY     0x0200UL
 

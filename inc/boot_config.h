@@ -23,11 +23,9 @@
 /*==========================================================================*/
 #ifdef BOOT_FROM_PCB
 /* ---- F2: fuente única = PCB (headers generados por EMIC-Codify) ---- */
-  #include "system.h"        /* FOSC, FCY, EMIC_BUS_I2C_PORT */
+  #include "system.h"        /* FOSC, FCY */
   #include "pins.h"          /* TRIS_Led1/LAT_Led1/CN_SCL/... (setPin.emic) */
-  #include "boot_board.h"    /* nombrePCB (emitido por generate.emic) */
-
-  #define BOOT_I2C_PORT   EMIC_BUS_I2C_PORT
+  #include "boot_board.h"    /* nombrePCB + BOOT_I2C_PORT (emitidos por generate.emic) */
 
   #define PIN_LED1_LAT    LAT_Led1
   #define PIN_LED1_TRIS   TRIS_Led1

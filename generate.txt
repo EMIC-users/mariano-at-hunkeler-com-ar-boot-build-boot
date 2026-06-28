@@ -4,7 +4,7 @@
 //          TARGET:inc/system.h       (FOSC/FCY + EMIC_BUS_I2C_PORT)
 //          TARGET:inc/pins.h         (TRIS_/LAT_/CN_ de Led1, SCL, SDA, ...)
 
-//-------------- nombrePCB como string C para el bootloader ------------------
+//-------------- Datos de placa para el bootloader (nombre + puerto I2C) ------
 
 //-------------- Fuentes del bootloader --------------------------------------
 

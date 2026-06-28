@@ -1,6 +1,7 @@
 #include <xc.h>
 #include <libpic30.h>
 
+// Puerto I2C del bus EMIC (convención EMIC system.i2c; usado por app y bootloader)
 
 #define TRIS_Led1	                _TRISB7
 #define PORT_Led1 	                _RB7

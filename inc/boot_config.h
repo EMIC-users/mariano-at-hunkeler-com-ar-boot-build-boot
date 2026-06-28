@@ -18,6 +18,8 @@
 #define POINTER_USER_PROGRAM_ADDR  0x8000UL
 #define ID_MODULO_ADDR             0x8400UL
 
+#define BOOT_DEFAULT_APP_ENTRY     0x0200UL
+
 /*==========================================================================*/
 /*  Configuración dependiente de la placa                                    */
 /*==========================================================================*/

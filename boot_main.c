@@ -298,6 +298,8 @@ int main(void)
                                 if (line_type == 1)          /* EOF */
                                 {
                                     PIN_LED1_LAT = 1;
+                                    if (addressProgramaTemp == 0xFFFF)
+                                        addressProgramaTemp = BOOT_DEFAULT_APP_ENTRY;
                                     addressPrograma = addressProgramaTemp;
                                     flashErasePage(POINTER_USER_PROGRAM_ADDR);
                                     flashWriteWord(POINTER_USER_PROGRAM_ADDR,

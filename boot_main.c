@@ -204,15 +204,16 @@ int main(void)
     flashReadWord(POINTER_USER_PROGRAM_ADDR, &wlo, &whi);
     addressPrograma = wlo;
 
-    flashReadWord(ID_MODULO_ADDR, &wlo, &whi);
     miVer[0] = 'V'; miVer[1] = ':';
+    flashReadWord(ID_MODULO_ADDR + 0, &wlo, &whi);
     miVer[2] = (char)(wlo & 0xFF);
     miVer[3] = (char)(wlo >> 8);
-    miVer[4] = (char)whi;
     flashReadWord(ID_MODULO_ADDR + 2, &wlo, &whi);
-    miVer[5] = (char)(wlo & 0xFF);
-    miVer[6] = (char)(wlo >> 8);
-    miVer[7] = (char)whi;
+    miVer[4] = (char)(wlo & 0xFF);
+    miVer[5] = (char)(wlo >> 8);
+    flashReadWord(ID_MODULO_ADDR + 4, &wlo, &whi);
+    miVer[6] = (char)(wlo & 0xFF);
+    miVer[7] = (char)(wlo >> 8);
     miVer[8] = ',';
     for (x = 0; x < sizeof(miMod); x++)
         miVer[x + 9] = miMod[x];

@@ -1,9 +1,7 @@
 #ifndef BOOT_ID_H
 #define BOOT_ID_H
 
-/* 7 chars + terminador. F1: valor de prueba. */
-#define BOOT_MODULE_ID   { 'j','j','o','0','b','3','Y' }
-#define BOOT_MODULE_ID_LEN  7
+#define BOOT_MODULE_ID      { '1','e','e','K','Q','T' }
+#define BOOT_MODULE_ID_LEN  6
 
 #endif /* BOOT_ID_H */
-

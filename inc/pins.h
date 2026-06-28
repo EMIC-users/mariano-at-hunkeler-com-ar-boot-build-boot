@@ -20,7 +20,7 @@
 #define CN_SCL		                24
 #define TRIS_SDA	                _TRISB5
 #define PIN_SDA 	                _RB5
-#define Lat_SDA 	                _LATB5
+#define LAT_SDA 	                _LATB5
 #define ODC_SDA	                _ODB5
 #define RPOUT_SDA		            RPOR2bits.RP5R
 #define RPIN_SDA		            5

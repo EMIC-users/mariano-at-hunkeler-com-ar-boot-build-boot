@@ -9,4 +9,5 @@
 //-------------- Fuentes del bootloader --------------------------------------
 
 //-------------- Linker del bootloader (mapa relocado al tope) ---------------
+//  (nombre p24..., convención de los .gld del SDK; ucName es pic24...)
 

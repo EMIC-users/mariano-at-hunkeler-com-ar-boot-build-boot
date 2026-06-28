@@ -401,18 +401,18 @@ int main(void)
                 buffidx++;
             }
         }
-        else
+        if (miEstado == 0 && miLoop)
         {
-            if (miLoop && miEstado == 0)
-            {
-                miLoop--;
-                __delay_us(10);
-            }
+            miLoop--;
+            __delay_us(10);
         }
     }
 
     if (addressPrograma)
+    {
+        I2CxCONbits.I2CEN = 0;   /* handoff limpio: apagar I2C antes de saltar */
         ((void (*)(void))addressPrograma)();   /* salto a la app */
+    }
 
     while (1);   /* nunca retorna */
     return 0;

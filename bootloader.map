@@ -23,7 +23,7 @@ Command:
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../lib/dsPIC33F \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33F/gld \
   -Map=C:\Dropbox\EMIC\TARGETS\mariano__hunkeler.com.ar\boot_build\BOOT\bootloader.map \
-  C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o \
+  C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o \
   -Tp24FJ64GA002_boot.gld.00 \
   -start-group \
   --library=c99-pic30-elf \
@@ -40,7 +40,7 @@ c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_
 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt_start_mode_normal.Meo)
                               (__crt_start_mode_normal)
 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                              C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o (___delay32)
+                              C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o (___delay32)
 
 
 xc16-ld 2.10 (A)
@@ -53,7 +53,7 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-_0000000004966000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
+_00000000049BE000_at_address_0000000000008400    0x8400                 0x8             0xc  (12)
 .text                       0x8408                0xce           0x135  (309)
 .const                      0x84d6                0x12            0x1b  (27)
 .text                       0x84e8               0x536           0x7d1  (2001)
@@ -162,7 +162,7 @@ CONFIG1          0x00abfe           0x000002
 
 Linker script and memory map
 
-LOAD C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+LOAD C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib/PIC24F\libpPIC24Fxxx-elf.a
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
@@ -218,24 +218,24 @@ __CONFIG1
 
 .debug_info       0x000000       0x1188
  *(.debug_info)
- .debug_info      0x000000       0x1188 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .debug_info      0x000000       0x1188 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x1e0
  *(.debug_abbrev)
- .debug_abbrev    0x000000        0x1e0 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .debug_abbrev    0x000000        0x1e0 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .debug_line       0x000000        0x20b
  *(.debug_line)
- .debug_line      0x000000        0x20b C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .debug_line      0x000000        0x20b C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .debug_frame      0x000000         0xc4
  *(.debug_frame)
- .debug_frame     0x000000         0xc4 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .debug_frame     0x000000         0xc4 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .debug_str        0x000000         0x6d
  *(.debug_str)
- .debug_str       0x000000         0x6d C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .debug_str       0x000000         0x6d C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .debug_loc
  *(.debug_loc)
@@ -247,7 +247,7 @@ __CONFIG1
                   0x000000         0xf1
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0xf1 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+                  0x000000         0xf1 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -255,7 +255,7 @@ __CONFIG1
 .debug_aranges    0x000000         0x18
  *(.debug_aranges)
  .debug_aranges
-                  0x000000         0x18 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+                  0x000000         0x18 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -847,12 +847,12 @@ LOAD data_init
 .debug_pubtypes
                   0x000018         0xfc
  .debug_pubtypes
-                  0x000018         0xfc C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+                  0x000018         0xfc C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 __c30_signature
                   0x000114         0x18
  __c30_signature
-                  0x000114          0x6 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+                  0x000114          0x6 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
  __c30_signature
                   0x00011a          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
  __c30_signature
@@ -861,7 +861,7 @@ __c30_signature
                   0x000126          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
 
 .nbss               0x0800         0x1c
- .nbss              0x0800         0x1c C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .nbss              0x0800         0x1c C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
                     0x0800                  _primerByte
                     0x0802                  _h_addr
                     0x0804                  _count
@@ -879,28 +879,28 @@ __c30_signature
                     0x0818                  _address_erase
 
 .bss                0x081c         0x60
- .bss               0x081c         0x60 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .bss               0x081c         0x60 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
                     0x081c                  _data
                     0x083c                  _buffer
 
-_0000000004966000_at_address_0000000000008400
+_00000000049BE000_at_address_0000000000008400
                   0x008400          0x8
- _0000000004966000_at_address_0000000000008400
-                  0x008400          0x8 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ _00000000049BE000_at_address_0000000000008400
+                  0x008400          0x8 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
                   0x008400                  _g_moduleId
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
-                  0x00abfe          0x2 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+                  0x00abfe          0x2 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .config_IESO      0x00abfc          0x2
- .config_IESO     0x00abfc          0x2 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .config_IESO     0x00abfc          0x2 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .const            0x0084d6         0x12 load address 0x0084d6  
- .const           0x0084d6         0x12 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .const           0x0084d6         0x12 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
 
 .text             0x0084e8        0x536
- .text            0x0084e8        0x536 C:\Users\RFI1\AppData\Local\Temp\ccwUk9LW.00009708.o
+ .text            0x0084e8        0x536 C:\Users\RFI1\AppData\Local\Temp\ccMTA4x1.00004da0.o
                   0x008680                  _main
 
 .init.delay32     0x008a1e         0x1c

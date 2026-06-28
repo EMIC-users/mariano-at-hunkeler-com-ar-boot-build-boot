@@ -96,7 +96,9 @@ unsigned char I2Chit, I2Cdata;
 
 static void bootI2cInit(void)
 {
-    /* pull-ups internos en SCL/SDA  [VALIDAR-HW] mapeo CNxxPUE en GA002 */
+    AD1PCFG = 0xFFFF;
+
+    /* pull-ups internos en SCL/SDA (por número CN del pin, desde la PCB) */
     PIN_SCL_CNPU = 1;
     PIN_SDA_CNPU = 1;
 
